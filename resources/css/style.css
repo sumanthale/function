@@ -1,0 +1,153 @@
+*{
+margin: 0;    
+padding: 0;
+font-family: 'Ubuntu', sans-serif;
+}
+body{
+    background-color: #fff;
+    color: #555;
+   
+}
+
+/* nav */
+.row{
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.logo{
+    margin-top: 30px;
+    height: 100px;
+    width: auto;
+    float: left;
+}
+.main-nav{
+    float:right;
+    list-style: none;
+
+}
+.main-nav li{
+    display: inline-block;
+    margin:70px 0 0 30px;
+}
+.main-nav li a:link,
+.main-nav li a:visited
+{
+    text-decoration: none;
+    color: #fff;
+    /* font-size: 112.5%; */
+    
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s ;
+}
+.main-nav li a:hover,
+.main-nav li a:active
+{ 
+    
+    padding-bottom: 4px;
+    border-bottom: 2px solid #e67e22;
+    color: #e67e22;
+}
+
+/* header */
+
+header{
+background-image: linear-gradient(rgba(0, 0, 0, 0.705),rgba(0, 0, 0, 0.705)), url(img/hero.jpg);
+height: 100vh;
+background-position: center;
+background-size: cover;
+background-attachment: fixed;
+
+}
+.main-hero-text{
+position: absolute;
+width: 1140px;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+
+}
+h1{
+    font-size: 3rem;
+   font-weight: 700px;
+    line-height: 1.5;
+    letter-spacing: 3px;
+    word-spacing: 1px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+h2{
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.btn:link,.btn:visited{
+    display: inline-block;
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+    border: 1px solid #cf6d17;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border-radius: 200px;
+   
+    transition: background-color 0.3s,border 0.3s,color 0.3s;
+}
+
+.btn:hover{
+    background-color: #cf6d17;
+    color: #fff;
+}
+.btn-dark{
+    background-color: #e67e22;
+    color: #fff;
+}
+.btn-outline{
+color: #cf6d17;
+}
+/* features */
+#features{
+    text-align: center;
+    padding: 80px ;
+}
+
+ion-icon {
+    font-size: 64px;
+
+    
+  }
+.features-para{
+    text-align: justify;
+}
+h2::after{
+    display: block;
+    width: 120px;
+    height: 2px;
+    background-color: #e67e22;
+    content: " ";
+    margin: 20px auto;
+}
+.long-copy{
+    text-align: justify;
+    line-height: 1.5;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    width: 70%;
+    margin: 10px auto;
+}
+@media only screen and (max-width:767px){
+    .col{
+        width: 100%;
+        display:block;
+        float: none;
+        background-color: green;
+    }
+    section{
+        padding: 0 4%;
+    }
+}
